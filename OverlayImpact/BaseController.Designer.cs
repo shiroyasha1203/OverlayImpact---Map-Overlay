@@ -1,6 +1,6 @@
 ﻿namespace OverlayImpact
 {
-	partial class StartUp
+	partial class BaseOverlay
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,36 +28,21 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.chkOverlay = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
-			// chkOverlay
-			// 
-			this.chkOverlay.AutoSize = true;
-			this.chkOverlay.Location = new System.Drawing.Point(26, 25);
-			this.chkOverlay.Name = "chkOverlay";
-			this.chkOverlay.Size = new System.Drawing.Size(84, 17);
-			this.chkOverlay.TabIndex = 0;
-			this.chkOverlay.Text = "StartOverlay";
-			this.chkOverlay.UseVisualStyleBackColor = true;
-			this.chkOverlay.CheckedChanged += new System.EventHandler(this.chkOverlay_CheckedChanged);
-			// 
-			// StartUp
+			// BaseOverlay
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(180, 73);
-			this.Controls.Add(this.chkOverlay);
-			this.Name = "StartUp";
-			this.Text = "StartUp";
+			this.ClientSize = new System.Drawing.Size(772, 499);
+			this.Name = "BaseOverlay";
+			this.Text = "BaseOverlay";
+			this.Load += new System.EventHandler(this.BaseOverlay_Load);
+			this.Paint += new System.Windows.Forms.PaintEventHandler(this.BaseOverlay_Paint);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.CheckBox chkOverlay;
 	}
 }
-

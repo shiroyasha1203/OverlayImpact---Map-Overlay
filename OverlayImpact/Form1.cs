@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace OverlayImpact
 {
-	public partial class Form1 : Form
+	public partial class StartUp : Form
 	{
-		public Form1()
+		BaseOverlay Form = new BaseOverlay();
+		public StartUp()
 		{
 			InitializeComponent();
+		}
+
+		private void chkOverlay_CheckedChanged(object sender, EventArgs e)
+		{
+			if (chkOverlay.Checked)
+			{
+				Form.Show();
+			}
+			else
+			{
+				Form.Hide();
+			}
+
 		}
 	}
 }
